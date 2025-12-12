@@ -6,15 +6,15 @@ export default function Header() {
   const headerNameRef = useRef<HTMLHeadingElement>(null);
   const text = "Aaron Seymour";
 
-  useEffect(() => {
-    const hero = document.getElementById("hero-name");
-    const headerName = headerNameRef.current;
-
-    if (!hero || !headerName) return;
-
+  function attachObserver(
+    hero: Element,
+    headerName: HTMLElement
+  ): IntersectionObserver {
     // Start hidden
     headerName.style.opacity = "0";
     headerName.textContent = "";
+
+    let hasTyped = false;
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -23,15 +23,16 @@ export default function Header() {
         if (entry.isIntersecting) {
           headerName.style.opacity = "0";
           headerName.textContent = "";
+          hasTyped = false;
           return;
         }
 
-        if (!entry.isIntersecting) {
+        if (!entry.isIntersecting && !hasTyped) {
+          hasTyped = true;
           headerName.style.opacity = "1";
           headerName.textContent = "";
 
           let i = 0;
-
           function type() {
             if (i < text.length) {
               headerName.textContent += text[i];
@@ -39,7 +40,6 @@ export default function Header() {
               setTimeout(type, 70);
             }
           }
-
           type();
         }
       },
@@ -47,7 +47,30 @@ export default function Header() {
     );
 
     observer.observe(hero);
-    return () => observer.disconnect();
+    return observer;
+  }
+
+  useEffect(() => {
+    const headerName = headerNameRef.current;
+    if (!headerName) return;
+
+    let observerInstance: IntersectionObserver | null = null;
+
+    function tryAttach() {
+      const hero = document.getElementById("hero-name");
+      if (!hero) {
+        requestAnimationFrame(tryAttach);
+        return;
+      }
+
+      observerInstance = attachObserver(hero, headerName!);
+    }
+
+    tryAttach();
+
+    return () => {
+      observerInstance?.disconnect();
+    };
   }, []);
 
   return (
@@ -67,3 +90,4 @@ export default function Header() {
     </header>
   );
 }
+
