@@ -3,7 +3,7 @@ export default function Home() {
     <main className="bg-[#0f161d] text-white">
       {/* HERO */}
       <section className="min-h-screen flex flex-col items-center justify-center bg-linear-to-b from-[#344861] to-[#0f161d]">
-        <h1 id="hero-name" className="text-6xl font-bold drop-shadow-lg mb-6">
+        <h1 id="hero-name" className="text-center text-6xl font-bold drop-shadow-lg mb-6">
           Aaron Seymour
         </h1>
 
