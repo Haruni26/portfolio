@@ -151,7 +151,6 @@ export default function Home() {
 
       <footer className="p-6 text-center">
         <p>&copy; 2025 Aaron Seymour - Portfolio Version 1.0</p>
-        <p>This is still in development</p>
       </footer>
     </main>
   );
