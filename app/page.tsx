@@ -3,7 +3,10 @@ export default function Home() {
     <main className="bg-[#0f161d] text-white">
       {/* HERO */}
       <section className="min-h-screen flex flex-col items-center justify-center bg-linear-to-b from-[#344861] to-[#0f161d]">
-        <h1 id="hero-name" className="text-center text-6xl drop-shadow-lg mb-6">
+        <h1
+          id="hero-name"
+          className="text-center text-6xl font-bold drop-shadow-lg mb-6"
+        >
           Aaron Seymour
         </h1>
 
@@ -54,12 +57,12 @@ export default function Home() {
 
           <div className="rounded-xl bg-[#1f2a36] p-6">
             <h3 className="text-xl font-semibold mb-2">
-              Fictional Pam Am Site
+              Fictional Pan Am Airline Site
             </h3>
             <p>
-              Fictional site for the airline Pan Am which allows you to
-              &quot;book&quot;, &quot;review&quot;, and &quot;track
-              flights&quot;.
+              Fictional site for the former airline Pan Am which allows you to
+              &quot;book&quot;, &quot;review&quot;, and &quot;track&quot;
+              flights.
             </p>
             <strong className="text-amber-400">- Work in Progress -</strong>
           </div>
@@ -152,7 +155,6 @@ export default function Home() {
 
       <footer className="p-6 text-center">
         <p>&copy; 2025 Aaron Seymour - Portfolio Version 1.0</p>
-        <p>This is still in development</p>
       </footer>
     </main>
   );
