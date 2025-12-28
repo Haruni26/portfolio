@@ -41,7 +41,7 @@ export default function Home() {
             href="https://github.com/Haruni26/Restaurant-Review-Website"
             target="_blank"
           >
-            <div className="rounded-xl bg-[#1f2a36] p-6 border border-transparent hover:border-gray-200 transition-colors cursor-pointer">
+            <div className="rounded-xl bg-[#1f2a36] p-6 border border-transparent hover:border-amber-200 transition-colors cursor-pointer">
               <h3 className="text-xl font-semibold mb-2">
                 Restaurant Review Site
               </h3>
@@ -49,24 +49,34 @@ export default function Home() {
                 Site which allows users to view and submit reviews for various
                 restaurants in Halifax
               </p>
-              <strong className="text-sm">
+              <strong className="text-sm text-amber-500">
                 HTML & CSS - Still In Development
               </strong>
             </div>
           </a>
 
-          <a href="https://github.com/Haruni26/a220-site" target="_blank">
-            <div className="rounded-xl bg-[#1f2a36] p-6 border border-transparent hover:border-amber-200 transition-colors cursor-pointer">
-              <h3 className="text-xl font-semibold mb-2">A220 Site</h3>
-              <p>
-                Website that gives information and showcases the Airbus A220
-                aircraft
-              </p>
-              <strong className="text-sm text-amber-400">
-                NextJs & Tailwind - In Early Development
-              </strong>
-            </div>
-          </a>
+          <div className="rounded-xl bg-[#1f2a36] p-6">
+            <h3 className="text-xl font-semibold mb-2">A220 Site</h3>
+            <p>
+              Website that gives information and showcases the Airbus A220
+              aircraft
+            </p>
+            <strong className="text-sm">NextJs & Tailwind</strong>{" "}
+            <a
+              href="https://a220-site.vercel.app/"
+              target="_blank"
+              className="hover:text-amber-400 ml-35 font-bold"
+            >
+              Site
+            </a>{" "}
+            <a
+              href="https://github.com/Haruni26/a220-site"
+              target="_blank"
+              className="hover:text-sky-400 ml-4 font-bold"
+            >
+              Github
+            </a>
+          </div>
 
           <div className="rounded-xl bg-[#1f2a36] p-6">
             <h3 className="text-xl font-semibold mb-2">
@@ -77,7 +87,9 @@ export default function Home() {
               &quot;book&quot;, &quot;review&quot;, and &quot;track&quot;
               flights.
             </p>
-            <strong className="text-red-400">- Work in Progress -</strong>
+            <strong className="text-red-400">
+              - Still In Heavy Development -
+            </strong>
           </div>
         </div>
       </section>
