@@ -113,7 +113,7 @@ export default function Home() {
           </div>
 
           {/* Airliner Project */}
-          <div className="rounded-xl bg-[#1f2a36] p-6 flex flex-col">
+          {/* <div className="rounded-xl bg-[#1f2a36] p-6 flex flex-col">
             <h3 className="text-xl font-semibold mb-2">
               Fictional Airliner Site
             </h3>
@@ -126,7 +126,7 @@ export default function Home() {
             <strong className="text-red-400 mt-12">
               - In Heavy Development
             </strong>
-          </div>
+          </div> */}
         </div>
       </section>
 
