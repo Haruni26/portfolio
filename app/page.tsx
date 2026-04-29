@@ -35,44 +35,8 @@ export default function Home() {
           ones to develop my skills.
         </p>
 
-        {/* A220 Project */}
+        {/* Project Menu */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="rounded-2xl bg-[#1f2a36] p-6">
-            <h3 className="text-2xl font-bold mb-2 text-white">A220 Site</h3>
-
-            <p className="text-gray-300 mb-4">
-              Website that gives information and showcases the Airbus A220
-              aircraft.
-            </p>
-
-            <div className="flex flex-wrap items-center gap-2 mb-4">
-              <span className="text-xs font-medium bg-gray-700 text-gray-200 px-3 py-1 rounded-full">
-                Next.Js
-              </span>
-              <span className="text-xs font-medium bg-gray-700 text-gray-200 px-3 py-1 rounded-full">
-                Tailwind CSS
-              </span>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-3">
-              <a
-                href="https://a220-site.vercel.app/"
-                target="_blank"
-                className="text-center border border-gray-400 rounded-lg px-4 py-2 font-semibold text-sm hover:bg-gray-700 transition"
-              >
-                Visit Website
-              </a>
-
-              <a
-                href="https://github.com/Haruni26/a220-site"
-                target="_blank"
-                className="text-center border border-sky-600 rounded-lg px-4 py-2 font-semibold text-sm hover:bg-sky-900 transition"
-              >
-                View GitHub
-              </a>
-            </div>
-          </div>
-
           {/* Junkanoo Project */}
           <div className="rounded-2xl bg-[#1f2a36] p-6">
             <h3 className="text-2xl font-bold mb-2 text-white">
