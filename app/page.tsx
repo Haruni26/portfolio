@@ -76,10 +76,52 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Airliner Project */}
-          {/* <div className="rounded-xl bg-[#1f2a36] p-6 flex flex-col">
+          {/* Restaurant Site */}
+          <div className="rounded-2xl bg-[#1f2a36] p-6">
+            <h3 className="text-2xl font-bold mb-2 text-white">
+              Fictional Restaurant
+            </h3>
+
+            <p className="text-gray-300 mb-4">
+              Website which advertises a fake restaurant and features a menu.
+            </p>
+
+            <strong className="text-orange-400">
+              - Parts still in development
+            </strong>
+
+            <div className="flex flex-wrap items-center gap-2 mb-4">
+              <span className="text-xs font-medium bg-gray-700 text-gray-200 px-3 py-1 rounded-full">
+                Next.Js
+              </span>
+              <span className="text-xs font-medium bg-gray-700 text-gray-200 px-3 py-1 rounded-full">
+                Tailwind CSS
+              </span>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a
+                href="https://fictional-restaurant-site.vercel.app/"
+                target="_blank"
+                className="text-center border border-gray-400 rounded-lg px-4 py-2 font-semibold text-sm hover:bg-gray-700 transition"
+              >
+                Visit Website
+              </a>
+
+              <a
+                href="https://github.com/Haruni26/fictional-restaurant-site"
+                target="_blank"
+                className="text-center border border-sky-600 rounded-lg px-4 py-2 font-semibold text-sm hover:bg-sky-900 transition"
+              >
+                View GitHub
+              </a>
+            </div>
+          </div>
+
+          {/* Airline Project */}
+          <div className="rounded-xl bg-[#1f2a36] p-6 flex flex-col">
             <h3 className="text-xl font-semibold mb-2">
-              Fictional Airliner Site
+              Fictional Airline Site
             </h3>
 
             <p>
@@ -90,7 +132,7 @@ export default function Home() {
             <strong className="text-red-400 mt-12">
               - In Heavy Development
             </strong>
-          </div> */}
+          </div>
         </div>
       </section>
 
